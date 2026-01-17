@@ -11,10 +11,10 @@ import Grid from '@mui/material/Grid';
 
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#fff',
+//   backgroundColor: '#ff00b3ff',
   padding: theme.spacing(1),
   textAlign: 'center',
-  fontWeight: 'bold',
+  fontWeight: 'bolder',
   [theme.breakpoints.only('xs')]: {
     fontSize: '10px'
   }
@@ -47,6 +47,12 @@ const Header = styled('div')(({ theme}) => ({
         marginBottom: '20',
         width: '100%',
     },
+    [theme.breakpoints.only('sm')]: {
+        flexDirection: 'column-reverse',
+        marginTop: '0',
+        marginBottom: '20',
+        width: '100%',
+    },
     [theme.breakpoints.only('md')]: {
         justifyContent: 'space-evenly',
         marginTop: '0',
@@ -64,6 +70,12 @@ const Header = styled('div')(({ theme}) => ({
 
 const ProfilePic = styled('img')(({ theme}) => ({
     [theme.breakpoints.only('xs')]: {
+        width: '180px',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    [theme.breakpoints.only('sm')]: {
         width: '180px',
         height: '100%',
         display: 'flex',
@@ -91,6 +103,10 @@ const Icons = styled('img')(({ theme}) => ({
         width: '20px',
         height: '100%',
     },
+    [theme.breakpoints.only('sm')]: {
+        width: '20px',
+        height: '100%',
+    },
     [theme.breakpoints.only('md')]: {
         width: '25px',
         height: '25px',
@@ -103,6 +119,10 @@ const Icons = styled('img')(({ theme}) => ({
 
 const Icons2 = styled('img')(({ theme}) => ({
     [theme.breakpoints.only('xs')]: {
+        width: '20px',
+        height: '100%',
+    },
+    [theme.breakpoints.only('sm')]: {
         width: '20px',
         height: '100%',
     },
@@ -146,7 +166,7 @@ export default function SummaryHeader() {
                         <Grid container spacing={1} columns={4}>
                             {skills.map((skill, index) => (
                                 <Grid key={index} size={2}>
-                                    <Item>{skill}</Item>
+                                    <Item className={`item-${skill}`}>{skill}</Item>
                                 </Grid>
                             ))}
                         </Grid>

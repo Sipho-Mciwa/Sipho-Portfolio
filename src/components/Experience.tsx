@@ -21,6 +21,10 @@ const Container = styled('div')(({ theme}) => ({
         width: '100%',
         marginTop: '10px',
     },
+    [theme.breakpoints.only('sm')]: {
+        width: '100%',
+        marginTop: '30px',
+    },
     [theme.breakpoints.only('md')]: {
         width: '100%',
         marginTop: '10px',

@@ -22,11 +22,21 @@
 
 
 .header-container {
-  background-color: aliceblue;
+  background-color: white;
   width: 50%;
   height: 300px;
   border: black solid 1.5px;
   border-radius: 10px;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 50%;
+  height: 300px;
+  border: black solid 1.5px;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 
 
@@ -68,3 +78,17 @@
   margin-top: 20px;
 }
 
+.heading {
+  color: black;
+  margin: 2;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  text-align: center;
+}
+
+.para-text {
+  padding: 0 15px;
+}

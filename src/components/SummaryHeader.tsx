@@ -38,37 +38,59 @@ const JobTitle = styled('p')(({ theme }) => ({
 }));
 
 const Header = styled('div')(({ theme}) => ({
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    paddingTop: '10px',
     [theme.breakpoints.only('xs')]: {
-        height: '450px',
-        width: '100%',
-        display: 'flex',
         flexDirection: 'column-reverse',
         marginTop: '0',
+        marginBottom: '20',
+    },
+    [theme.breakpoints.only('md')]: {
+        justifyContent: 'space-evenly',
+        marginTop: '0',
+        marginBottom: '20',
     },
     
 }));
 
 const ProfilePic = styled('img')(({ theme}) => ({
     [theme.breakpoints.only('xs')]: {
-        width: '150px',
+        width: '180px',
         height: '100%',
         display: 'flex',
         justifyContent: 'center'
     },
+    [theme.breakpoints.only('md')]: {
+        width: '320px',
+        height: '90%',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '10px 10px 10px 10px'
+    },
 }));
 
 const Icons = styled('img')(({ theme}) => ({
+    cursor: 'pointer',
     [theme.breakpoints.only('xs')]: {
         width: '20px',
         height: '100%',
     },
-    cursor: 'pointer'
+    [theme.breakpoints.only('md')]: {
+        width: '25px',
+        height: '25px',
+    },
 }));
 
 const Icons2 = styled('img')(({ theme}) => ({
     [theme.breakpoints.only('xs')]: {
         width: '20px',
         height: '100%',
+    },
+    [theme.breakpoints.only('md')]: {
+        width: '25px',
+        height: '25px',
     },
     cursor: 'pointer'
 }));

@@ -18,7 +18,7 @@ export default function Highlights() {
    return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid size={{'sm': 12}}>
+        <Grid size={{'sm': 12, 'md': 4}}>
           <Item>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Background</Typography>
             <ul>
@@ -29,7 +29,7 @@ export default function Highlights() {
             </ul>
           </Item>
         </Grid>
-        <Grid size={{'sm': 12}}>
+        <Grid size={{'sm': 12, 'md': 4}}>
           <Item>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Technical</Typography>
             <ul>
@@ -41,7 +41,7 @@ export default function Highlights() {
             </ul>
           </Item>
         </Grid>
-        <Grid size={{'sm': 12}}>
+        <Grid size={{'sm': 12, 'md': 4}}>
           <Item>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Achievements</Typography>
             <ul>

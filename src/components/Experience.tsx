@@ -16,16 +16,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Container = styled('div')(({ theme}) => ({
     height: '100%',
-    width: '100%',
     paddingBottom: '30px',
     [theme.breakpoints.only('xs')]: {
-        // width: '100%',
-        // display: 'flex',
+        width: '100%',
         marginTop: '10px',
     },
     [theme.breakpoints.only('md')]: {
-        // display: 'flex',
+        width: '100%',
         marginTop: '10px',
+    },
+    [theme.breakpoints.up('lg')]: {
+        width: '50%',
     },
 }));
 

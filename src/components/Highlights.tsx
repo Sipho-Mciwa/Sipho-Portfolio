@@ -9,17 +9,20 @@ const Item = styled(Paper)(({ theme }) => ({
     color: 'black',
     backgroundColor: '#fff',
     padding: theme.spacing(1),
+    paddingRight: theme.spacing(2),
     marginTop: '10px',
     borderRadius: '10px',
     border: 'black solid 1.5px',
 }));
 
+
+
 export default function Highlights() {
    return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid size={{'sm': 12, 'md': 4}}>
-          <Item>
+    <Box sx={{ flexGrow: 1}}>
+      <Grid container spacing={2} alignItems='stretch' justifyContent='center'>
+        <Grid size={{'sm': 12, 'md': 4, 'lg': 2.005}}>
+          <Item sx={{height: '95%'}}>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Background</Typography>
             <ul>
                 <li>Software Developer with 2+ years of experience building and maintaining web applications.</li>
@@ -29,8 +32,8 @@ export default function Highlights() {
             </ul>
           </Item>
         </Grid>
-        <Grid size={{'sm': 12, 'md': 4}}>
-          <Item>
+        <Grid size={{'sm': 12, 'md': 4, 'lg': 2.005}}>
+          <Item sx={{height: '95%'}}>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Technical</Typography>
             <ul>
                 <li>Proficient in Frontend development using React, Material UI, HTML, CSS, and TypeScript.</li>
@@ -41,8 +44,8 @@ export default function Highlights() {
             </ul>
           </Item>
         </Grid>
-        <Grid size={{'sm': 12, 'md': 4}}>
-          <Item>
+        <Grid size={{'sm': 12, 'md': 4, 'lg': 2.05}}>
+          <Item sx={{height: '95%'}}>
             <Typography style={{fontWeight: 'bold', textAlign: 'center'}}>Achievements</Typography>
             <ul>
                 <li>Contributed to Line of Sight, a production web application using React and Material UI, taking ownership of state management and UI design.</li>
